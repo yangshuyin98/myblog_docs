@@ -68,11 +68,12 @@ export const sidebar: DefaultTheme.Sidebar = {
 
 
   '/notes/': [
+    { text: '安装git', link: '/notes/安装git' },
     { text: 'git常用命令', link: '/notes/git常用命令' },
     { text: 'GitHub', link: '/notes/GitHub上删除项目中的个别文件' },
     { text: '常用Markdown', link: '/notes/常用Markdown语法' },
     { text: '下载和安装Pandoc_Windows版本', link: '/notes/下载和安装Pandoc_Windows版本' },
-    { text: '安装git', link: '/notes/安装git' },
+
     { text: 'note', link: '/notes/note' },
     { text: 'Pandoc命令', link: '/notes/Pandoc命令' },
     { text: 'FFmpeg项目', link: '/notes/FFmpeg项目' },
