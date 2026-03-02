@@ -1,22 +1,22 @@
 import { defineConfig } from 'vitepress'
-import {  sidebar } from './relaConf';
-import { navbar} from './relaConf';
+import { sidebar } from './relaConf';
+import { navbar } from './relaConf';
 import { type DefaultTheme } from 'vitepress';
 
 
 export default defineConfig({
-  
-  base: "/docs/",
+
+  base: "/myblog_docs/",
   title: "modern的Vitepress文档",
   description: "一个vitepress站点",
-  themeConfig: {        
+  themeConfig: {
     outlineTitle: '文章目录',
     outline: [2, 6],
     logo: '/comet.png',
     nav: navbar,
-  
+
     sidebar: sidebar, // 把定义的sidebar给替换进来
-   
+
     lastUpdated: {
       text: 'Last Updated',
       formatOptions: {
