@@ -31,9 +31,9 @@ git工具下载：<https://git-scm.com/downloads>
 安装完成后，在命令行输入git --version可以查看到git的版本。
 验证Git安装是否成功的方法：
 
-1. 验证Git安装是否成功的方法是通过在命令提示符或终端中输入以下命令：git --version
-2. 若显示版本号（git version 2.48.1.windows.1），说明Git安装成功。
-3. 如果没有返回版本信息或出现“命令未找到”的错误消息，则表示Git可能未正确安装或未添加到系统路径中。此时，可以参考安装指南重新检查安装步骤。
+01. 验证Git安装是否成功的方法是通过在命令提示符或终端中输入以下命令：git --version
+02. 若显示版本号（git version 2.48.1.windows.1），说明Git安装成功。
+03. 如果没有返回版本信息或出现“命令未找到”的错误消息，则表示Git可能未正确安装或未添加到系统路径中。此时，可以参考安装指南重新检查安装步骤。
 
 安装完成后，右键菜单也会出现Git GUI、Git Bash相应的菜单。
 
@@ -42,8 +42,6 @@ git工具下载：<https://git-scm.com/downloads>
 当安装完 Git 后：
 
 应该做的第一件事就是设置你的用户名称与邮件地址。这样做很重要，因为每一个 Git 的提交都会使用这些信息，并且它会写入到你的每一次提交中，不可更改。
-
-
 
 ### 全局配置（适用于所有项目）：
 
@@ -107,7 +105,7 @@ Github地址：<https://github.com/new>
 由于我们的本地git仓库和 GitCode仓库之间的传输是通过SSH加密的，所以我们需要配置SSH密钥。
 如果你打算将Git仓库托管在GitHub、GitLab等远程代码托管平台上，并希望通过SSH方式进行代码推送和拉取，那么还需要配置SSH密钥。
 
-1. 首先，在命令提示符中输入命令生成SSH密钥对。按照提示完成三次回车，即可生成ssh key。
+01. 首先，在命令提示符中输入命令生成SSH密钥对。按照提示完成三次回车，即可生成ssh key。
 
 ```text
 ssh-keygen -t rsa -C "yangshuyin@126.com"
@@ -116,48 +114,49 @@ ssh-keygen -t rsa -C "yangshuyin@126.com"
 可以看到，我们生成的公钥文件id_rsa.pub路径：C:\User\Adminstrator/.ssh/id_rsa.pub。
 这个命令会生成一个私钥（默认存储在~/.ssh/id_rsa）和一个公钥（默认存储在~/.ssh/id_rsa.pub）。
 
-
-
 ## 六、配置SSH密钥的步骤
 
-1. 进入该目录用文本编辑器打开。即可看到SSH公钥，下文中将会用到这个SSH公钥。
+01. 进入该目录用文本编辑器打开。即可看到SSH公钥，下文中将会用到这个SSH公钥。
 
-2. 然后，登录到你的远程代码托管平台账户，找到SSH密钥设置部分，将生成的公钥添加到你的账户中。
+02. 然后，登录到你的远程代码托管平台账户，找到SSH密钥设置部分，将生成的公钥添加到你的账户中。
 
-3. 在GitCode网站点击设置。
+03. 在GitCode网站点击设置。
 
-4. 点击SSH密钥。
+04. 点击SSH密钥。
 
-5. 拷贝刚刚的SSH密钥到框中，输入公钥标题，点击添加密钥。
+05. 拷贝刚刚的SSH密钥到框中，输入公钥标题，点击添加密钥。
 
-6. 配置成功。
+06. 配置成功。
 
-7. 最后，为了验证SSH配置是否成功，可以在命令提示符中输入（以GitHub为例）命令进行测试。
+07. 最后，为了验证SSH配置是否成功，可以在命令提示符中输入（以GitHub为例）命令进行测试。
 
-   ```text
+   
+
+```text
+   ssh -T git@gitee.com
    ssh -T git@github.com
    ssh -T git@gitee.com
    ```
+
    > gitee码云为：gitee.com
    > GitHub 为：     github.com
 
 10. 如果看到欢迎信息，则说明SSH配置成功。
 
    > gitee码云的提示信息为：
-   > ```bash
-   > Hi yangshuyin98! You've successfully authenticated, but GitHub does not provide shell access.
-   > ```
    > 
 
+```bash
+   > Hi yangshuyin98! You've successfully authenticated, but GitHub does not provide shell access.
+   > ```
 
-
-
+   > 
 
    > GitHub的提示信息为：
-   > ```bash
-   > Hi yangshuyin98! You've successfully authenticated, but GitHub does not provide shell access.
-   > ```
    > 
 
+```bash
+   > Hi yangshuyin98! You've successfully authenticated, but GitHub does not provide shell access.
+   > ```
 
-
+   > 

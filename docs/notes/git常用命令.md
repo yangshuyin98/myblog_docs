@@ -183,14 +183,10 @@ git init           # 初始化Git仓库（生成隐藏的.git文件夹）
    git remote add origin https://xxxxx.git    # 添加远程仓库别名
    ```
 
-   ```text
    
-   ```
-
+   
    
 
-   
-   
 
 # C.将文件加入暂存区
 
@@ -279,7 +275,7 @@ git push
 
 
 
-# 问题处理1
+# 问题处理1：remote
 
 ### 合并远程更新（推荐）
 
@@ -314,9 +310,13 @@ error: remote origin already exists.
    origin git@gitee.com:linxinfa/mytest.git (push)
 ```
 
-   我们可以删除已有的远程库
+  ① 我们可以删除已有的远程库
+
+```
    git remote rm origin
-   再关联远程库
+```
+
+  ② 再关联远程库
 
 ```text
    git remote add  git@github.com:yangshuyin98/docs.git
