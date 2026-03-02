@@ -28,8 +28,7 @@ export const sidebar: DefaultTheme.Sidebar = {
     { text: '05_ev_api_server', link: '/frontEnd/Node.js/05_ev_api_server' },
     { text: '06_ev_api_server', link: '/frontEnd/Node.js/06_ev_api_server' },
 
-
-
+    { text: 'npm', link: '/frontEnd/npm/npm.md' },
     { text: 'else', link: '/frontEnd/else/else.md' },
   ],
   '/CAE/': [
@@ -114,7 +113,6 @@ export const sidebar: DefaultTheme.Sidebar = {
   ],
   '/vuepress/': [
     { text: 'A_Node.js安装', link: '/vuepress/A_Node.js安装.md' },
-    { text: 'B_npm镜像站', link: '/vuepress/B_npm镜像站' },
     { text: 'C_vuepress@1.9.10', link: ' /vuepress/C_vuepress@1.9.10' },
     { text: '什么是敏感信息', link: ' /vuepress/什么是敏感信息' },
 

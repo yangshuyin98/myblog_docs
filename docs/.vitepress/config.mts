@@ -6,7 +6,7 @@ import { type DefaultTheme } from 'vitepress';
 
 export default defineConfig({
 
-  base: "/docs/",
+  base: "/myblog_docs/",
   title: "modern的Vitepress文档",
   description: "一个vitepress站点",
   themeConfig: {
