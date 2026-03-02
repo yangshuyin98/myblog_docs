@@ -274,11 +274,13 @@ Markdown 本身不支持背景色设置，需要借助 table、tr、td 等表格
 
 感叹号(!) + [图片名字] + 再打入一对括号可自动有选择图片的按钮(注意：此处符号为英文字符)
 
-插入图像的语法： `
+插入图像的语法： 
+
+```
 
 ![描述](图片链接地址)
 
-`
+```
 
 > 注：图像链接地址，相对路径 和 绝对路径（网络地址）都支持
 
@@ -447,16 +449,10 @@ Markdown 本身不支持背景色设置，需要借助 table、tr、td 等表格
 
 例如：
 
-````
-
 『```代码语言 空格』  代码块
 
 ```js
 console.log("Hello, world!");
-```
-
-`
-
 ```
 
 ## 三、MarkDown 进阶语法
@@ -912,13 +908,9 @@ Markdown 锚点允许在文档内部创建链接，指向同一个页面上的�
 
 ## 四、MarkDown 高级语法
 
-TIP
-
 深入浅出 LaTeX 公式，应用场景，表情符号
 
 ### 1、LaTeX 公式
-
-TIP
 
 LaTeX 是一种用于高质量排版的技术和科学文档的排版系统。在 Markdown 中嵌入 LaTeX 公式，可以极大地提升文档的专业性和可读性。涵盖了数学、物理、化学等多个学科领域。
 
@@ -943,17 +935,7 @@ $E = mc^2$
 
 ##### 1.2、行间公式
 
-TIP
-
-使用 `$$...$$` 或
-
-`
-
-...
-
-`
-
-（某些 Markdown 解析器支持）将公式包围起来
+使用 `$$...$$` 或`...`（某些 Markdown 解析器支持）将公式包围起来
 
 ```markdown
 这是一个行间公式：
@@ -1191,9 +1173,7 @@ LaTeX 公式中的符号非常丰富，涵盖了数学、物理、化学等多�
 | 交集   | `\cap` | `A \cap B` |                                                              |
 | 空集   | `\emptyset` 或 `\varnothing` | `\emptyset` 或 `\varnothing` | 
 
-![image-20241218013901539](data:image/png; base64, iVBORw0KGgoAAAANSUhEUgAAAD4AAAAeCAIAAAD7DzolAAAEsElEQVRYhe2Xf1AUZRjHn91b/COBrNGsScdkctDcC3VER8Pd/DXOlXZ7J5g2/phK5TD+UFGGGuUmKseUP3JiRkGaZNBoVLgI4SYYo8P8QaIhmz8wu2SE4DxEOXG4vX33fftj0/hx7wHVBI5+5/7Y993nee4z33v2eW8ZQgg8nGIHG+Cf6zH6YOgx+mDo0UBHCA2ksqco1ZIpA3idG0RLpjxQsL7VBzrGWEVIUdSOjo4p8xMGSK9rWoZrX1S+xbjvP8bnQtzTMC7/4VT+kdILVy4zmJkXNwNphAuV0VPuRg8YR48EsO5yWP8tak+FAvHeaiv8tnzbxnUTJ7yQufdAcWml+3rDS9Evdg9ybojPOUErUW0z7uy6Nh10rY+hxCKkYaxhQgwGA8OwnIHVNznOEDyBUIQQSv806/PcQ/o1L0o7PstNse9GCNFSeqh2r5RU1tLPYL+imJYn8oJ5smCeLEjvpWV0dvqrTtfMs65V1eDfSHUdaVrdpaubbKsBwB8IAAOzp7+c/MGObZsTR0RGdI+VM8X0vK4bKzJkm5FWubcuX3UvW5eyKXHV6uUSAKAA2rM/f/qi5QCkpuIwzXXqY0owufFHC0MAAA58XRwbw7OsAQB8vo5g4dEfHnXILofsclSmRetbz4+LPtFwU79udaYZxZwLwTIDATX5/R1Llyx85y0rx7Icyw4bFjY7duqkCeMZIAaWSki90XzT61cCLMtqGv6y4Jv1K+NZliEAvrt3aSk9NHJMFLgbWwEAPFWV9XPSzEG7/LjrdEvrLXtKkr7UMC53ncrNL/xq766J48cVOMoGjN7U7GUYgjHBGCuKMn0KjzFmGGi93d5PdHh27JzqG00AIBfbq02JptFBo1w/nTcvEBmGAQCEUHbeYdfJs1/syQgL4xa/Nv/360208tReHxE5nBCGZZnTNbVPPRnJsgzLsgDAsUE7r94eb7E/WK0AAIBRY6LA9ZtXrkh2rsly0AZLp/+eceIknXv7zqyxY5/7KC1Z7+/rDc3hEU/QCKmuR4SHM0AQ1gqPVVhfn69zAwFMcLDwIL0O8EzUzHp7fHreiowt9IdWnDXzUGGJqiJb6sfC7FjbqgSO4wAAY3yk9DvT3DhqJm1atd1p50Wp8sfqmLnWZo+XEHLwaMm0hctut/v6Oe/0+cgL2bV/rep2C9Luup4xSiDAC9LazdsLiso0jB/sX6y/NlmUVFWlFae6Hhk+fNGrrxz7/qSG8aiRTwPAr+6GGVMmRQyn/YJypmgx3v9scHou7LOsLAAAZ4X+D8Db6AbTwl72V5+TAciZ8/Idnw9pmqZpqqYVlR5/c92WvD2fcCFO7xCeXbxyLW7xqi3puxBCZ3/+hRfMJ86c6xl0syxJkHihq7uEkJbCrfd36rJ53ey6bH5rmbd7tqqqvCCVlFf5lUDCuxt50cwLEi9KvCDV1F4KwUYIYQj9tdofUJe+vVFR/c3eNnHm1AVxs5aY5oUZKMfy3/IUpdrsUV1OJTnHmOwEgDVZjt5NjxB60NyKqhoYBoBhOQNHn+h9u64oCi+8cc/vVxRFCQQ0TQttw/+sUK53tWQIqg/0oaxH4wVvqOkx+mDoIUb/E/qGF0c2I+ozAAAAAElFTkSuQmCC)
 
- |
 
 ##### 6.3、函数和运算符
 
@@ -1213,14 +1193,11 @@ LaTeX 公式中的符号非常丰富，涵盖了数学、物理、化学等多�
 | :----- | :-------------------------------- | :------------------------------------------- | :----------------------------------------------------------- |
 | 矩阵   | `\begin{matrix} ... \end{matrix}` | `\begin{matrix} a & b \\ c & d \end{matrix}` | 
 
-![image-20241218013653083](data:image/png; base64, iVBORw0KGgoAAAANSUhEUgAAADcAAAA1CAIAAABqceQaAAAE1ElEQVRoge2YaUybZRzA/+/RMjZB51YoIOxCrpZVChljI3UbM2G4GGAajZos6gcTjfHAT5tiSNh0YcTMQFwgLu4WBpqNbYGyCCq7OAflGCArrJyFsqHj6vscfmiyeBT6tDSASX/fnjfP/3l/z31wlFJY9vBLLcCEx9J9eCzdh7iYP0MIWa1IEHkvudypwMWzRAjHJL1MOS42OrIwN0sul7HHLl6Pi6JQry8KXR8SqPQTZc61zqKOyyHzWI/xvr9iLc9xTgU6tsQYE0JcFfsHt+qbKcBuXQIhFGMnypzPEiF8qaI6Kyc/t+Ds5PR06WX9QrZTQkh9U9tmVbi+6oZmV1reibOSJC3UUpLQZ199c+XaL6+m7olTR8SnvJ7/XRFCaCGWhrvdhvbOQKWiXl/8u9H0Rc5xjDFLrP1RjAk5daGso8uY9+WB4CBl6Kw1NCRYowoXRdfXhL7+ocGR0Q/f3f9aWjIABAcFVNfUYUIEQXAYa78tHzz841zpFV1CbKBSAQDdRlN3rykmOpJzctT/nfrmduBo8s5tAIAQ6R8YfjQ1yTiC7FvWNraYxyxxGpWtotdvN/IAW7Rql6cRIaTJ0LbmqdVKxRoAAKCtd3tCggIZK23f0jRgBoAtWjUAYEJu1jerw0NX+/q+/VEmQkwj6d+WlP45OR2gVNh6o9HQPmqxpKckMa7t9i3DQ9cB0Lo7bYSQq/pfG1rbNqvCamqbJqemed6VThd4PmzjujHLQ4xR/8DQ8e9LUpJ0LyXvYAzn7C4uhJCiSxWll6t6e/sy3tvv7b3i8yPHKPANFUVeXs5twY+ZnZVOnLtQXl13r9f4RvreT99/SxQdz5v5LAEAY0KAAqGCKAClGGMAXiZjLdcuCGOCKceBKApOTcQ5LZcV/4/zpcfSfXgs3YfH0n14LN3H0lhSSq1WaXJqur2rhyX/0uyQCJGYF/YBBaDQUFns8Py2NG0pinxdeZE2WqXbGstyMlqycTk8OtZoaNNqVDzv2IHptkUIwRgLoujsbd9uUYgQjuNaWjuBgibqWZYoB5aShPJOnP+5ps5oMr24c3v2wY9lzEfX/zIza80++u0901Bi/HOTMzN+iqc1qgiWwPla2ypJWTn5gsAXFR7NzcwYHh039t13WXFqeuaTzCMadfjJ/EM+T6wqr/xNExVG2fpmTkuEcEZmzp22rjf37V25Qj7xaGrFSm9fnyddU5Qk6YMDh8ceTKSm7JYJQvKuRPP4uEYdKWe84NM50FfdUOtSTxZftCUxxgihuTI7pLL6pvr51ENfF9iSP129ptalGtq7GMPtV4VSOmgeBQBtdJTtC8tMnKchBkfMQCEuRmVL1tQ2bVwfHLZpPSGEpeQ5cwQpFQDwTIDf4y81t5o6uowuWBJCZDIRAHTxsQCAMb5V16yNjhi2WHamvYMYnorsW3IclxivDfT3v367EWEsIVRwuvTwsQLLxIQLloIghG4IAYCWjk6EUEzSK3KZzGeVz5kfynRbtSLDO9E8N108OGI+VVLWYujieV6XEJuekuTvt9YFSwCwStKPZfrC8xfN5tE9O7Zv2hB8pqRsW1x09sEMGcO7sIN93CohoJQXeJYazw8hhBDgOMrzvG1OAADLg5tjy2WC53zpPjyW7sNj6T48lu7jL+ytp71lzeMGAAAAAElFTkSuQmCC)
 
- |
-| 行列式 | `\det` | `\det(A)` |                                                              |
+
+
 
 ##### 6.5、其他符号
-
-### 
 
 | 符号   | LaTeX 命令                                                   | 示例                                                   | 渲染效果 |
 | ------ | :----------------------------------------------------------- | :----------------------------------------------------- | :------- |
@@ -1322,7 +1299,7 @@ Markdown 本身并不直接支持绘制流程图的功能。
 
 声明流程图代码块：
 
-在 Markdown 文件中，使用三个反引号 `` ` 来声明一个代码块，并指定语言为` mermaid`
+在 Markdown 文件中，使用三个反引号 ` `  ` 来声明一个代码块，并指定语言为 ` mermaid`
 
 ~~~markdown
 
@@ -1696,7 +1673,7 @@ VitePress 带有内置的 Markdown 扩展。当前文档对应的是官方 [1.0.
 
 ## 八、数字序号的七个层级
 
-### 一、数字序号的层级 [#](https://md.xalaok.top/docs/document-style/numbering/#一数字序号的层级)
+### 一、数字序号的层级 
 
 （一）数字序号的七个级别顺序为：
 
@@ -1752,7 +1729,7 @@ VitePress 带有内置的 Markdown 扩展。当前文档对应的是官方 [1.0.
 1.3　科技论文的分类
 ```
 
-## 二、序号后正确使用标点、空格 [#](https://md.xalaok.top/docs/document-style/numbering/#二序号后正确使用标点空格)
+## 二、序号后正确使用标点、空格 
 
 （一）“第一”“第二”“第三”或“首先”“其次”等后面用顿号不规范，应该用逗号，即“第一，”“第二，”“第三，”“首先，”“其次，”等。
 
