@@ -104,6 +104,7 @@ nmcli connection modify <连接名称> connection.autoconnect yes
 #wget https://zlib.net/fossils/zlib-1.2.11.tar.gz
 #wget https://zlib.net/zlib-1.3.1.tar.gz
 解压zlib安装包
+
 # tar -zxvf zlib-1.2.11.tar.gz
 
 
@@ -150,13 +151,17 @@ vim /etc/httpd/conf/httpd.conf
 
 开启80端口的防火墙
 测试PHP是否可以运行（默认的apache站点的目录：/var/www/html）
+
+```
 cd       /var/www/html
 vim index.php
-<?php
+
 phpinfo();
-
-
 ps -ef查看进程
+```
+
+
+
 
 Apache 
 
