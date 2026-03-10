@@ -20,8 +20,10 @@ export const navbar: DefaultTheme.NavItem[] = [
             { text: 'Ubantu软件安装', link: '/linux/Ubantu/Ubantu软件安装' },
             { text: 'Xshell使用', link: '/linux/Ubantu/Xshell使用' },
             { text: 'ubantu安装与命令', link: '/linux/Ubantu/ubantu安装与命令' },
-            { text: '服务器安装docker', link: '/linux/Ubantu/服务器安装docker' },
+            { text: 'Ubantu软件安装', link: '/linux/Ubantu/Ubantu软件安装' },
 
+            { text: 'docker常用命令', link: '/linux/Ubantu/docker常用命令' },
+            { text: '服务器安装docker', link: '/linux/Ubantu/服务器安装docker' },
             { text: 'WSL搭建docker', link: '/linux/Ubantu/WSL搭建docker' },
             { text: 'VM_ubuntu22.04搭建docker', link: '/linux/Ubantu/VM_ubuntu22.04搭建docker' },
             { text: 'Windows系统中安装OpenClaw', link: '/linux/Ubantu/Windows系统中安装OpenClaw' },

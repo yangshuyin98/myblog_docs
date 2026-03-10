@@ -164,3 +164,40 @@ which nvm
 /usr/local/sbin:
 ```
 
+
+
+
+
+## 8、通过下载tgz安装
+
+1. **下载安装包**：在你的 Windows 系统（不是 WSL）里，用浏览器打开这个链接：https://github.com/ollama/ollama/releases/latest/download/ollama-linux-amd64.tgz 。如果下载慢，可以自行搜索一个 GitHub 加速器，把上面的链接复制进去下载。
+
+2. **传输文件**：将下载好的 `ollama-linux-amd64.tgz` 文件，放到你的 WSL2 Ubuntu 的用户目录下（例如 `/home/你的用户名/`）。
+
+3. **解压安装**：回到 WSL2 终端，依次执行以下命令：
+
+   bash
+
+   ```
+   # 解压文件
+   sudo tar -C /usr -xzf ollama-linux-amd64.tgz
+   
+   # 创建 Ollama 用户（如果尚未创建）
+   sudo useradd -r -s /bin/false -m -d /usr/share/ollama ollama
+   
+   # 启动 Ollama 服务
+   sudo systemctl enable ollama
+   sudo systemctl start ollama
+   ```
+
+   
+
+4. **验证安装**：执行 `ollama -v`，如果显示版本号，则安装成功
+
+### **后续步骤**
+
+成功安装 Ollama 后，请继续按照上一份教程的步骤进行：
+
+1. **拉取模型**：在 WSL2 终端执行 `ollama pull deepseek-r1:14b`。
+2. **验证模型**：执行 `ollama run deepseek-r1:14b` 测试是否能正常对话。
+3. **回到 Docker 教程**：完成模型拉取后，就可以无缝衔接我们上一轮讨论的 Docker 部署 OpenClaw 的步骤了。
