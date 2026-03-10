@@ -93,9 +93,14 @@ git config --global --list
 
 地址：https://gitee.com/
 
-#### Github
+#### GitCode
 
+GitCode是面向全球开发者的开源社区, 包括原创博客, 开源代码托管, 代码协作, 项目管理等。与开发者社区互动, 提升您的研发效率和质量。
 如果你有CSDN账号，直接用CSDN账号登录即可。
+
+地址：https://gitcode.com/setting/key-ssh
+
+#### Github
 
 我们先在 Github上注册账号并登录。
 Github地址：<https://github.com/new>
@@ -135,13 +140,14 @@ ssh-keygen -t rsa -C "yangshuyin@126.com"
 ```text
    ssh -T git@gitee.com
    ssh -T git@github.com
-   ssh -T git@gitee.com
+   ssh -T git@gitcode.com
    ```
 
    > gitee码云为：gitee.com
    > GitHub 为：     github.com
+   > 开源社区为：     gitcode.com
 
-10. 如果看到欢迎信息，则说明SSH配置成功。
+01.  如果看到欢迎信息，则说明SSH配置成功。
 
    > gitee码云的提示信息为：
    > 
