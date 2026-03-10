@@ -3,8 +3,7 @@
 
 
 ```
-su -
-或 su - root
+sudo su - root
 sudo su -
 ```
 
@@ -28,7 +27,6 @@ sudo -i
 
 ```
 sudo passwd root
-
 ```
 
 
@@ -52,8 +50,8 @@ exit
 
 | 方法 | 命令 | 密码要求 | 说明 |
 | ---- | ---- | ---- |---- |
-|切换到 root 用户|su - 或 su - root root|用户的密码|直接切换到 root 用户并加载 root 用户环境。|
-|临时获得管理员权限|sudo 例如：sudo ls /root|当前用户的密码|使用当前用户的 sudo 权限来执行管理员命令。|
+|切换到 root 用户|sudo su - root|root用户的密码|直接切换到 root 用户并加载 root 用户环境。|
+|临时获得管理员权限|sudo|当前用户的密码|使用当前用户的 sudo 权限来执行管理员命令。|
 |通过 sudo 切换到 root|sudo su -|当前用户的密码|使用 sudo 切换到 root 用户，并加载 root 用户环境。|
 |启动 root shell|sudo -i|当前用户的密码|启动一个新的 shell，模拟 root 用户环境。|
 |设置 root 密码|sudo passwd root|当前用户的密码|在没有 root 密码的情况下，设置 root 用户密码。|
