@@ -87,12 +87,15 @@ sudo nano /root/.openclaw/config.json
 ### 启动 OpenClaw 容器（使用 host 网络模式）
 
 ```bash
+# 清理可能存在的旧容器
 docker stop openclaw 2>/dev/null; docker rm openclaw 2>/dev/null
+
+# 启动新容器
 docker run -d \
   --name openclaw \
   --network host \
   -v /root/.openclaw:/data \
-  -v /home/你的Linux用户名/openclaw/workspace:/workspace \
+  -v ~/openclaw/workspace:/workspace \
   sgccr.ccs.tencentyun.com/openclaw/openclaw:latest
 ```
 
@@ -102,7 +105,23 @@ docker run -d \
 
 
 
+1. 获取访问 Tokenbash
 
+   ```
+   sudo cat /root/.openclaw/config.json | grep token
+   ```
+
+    生成带 Token 的访问链接
+   
+   
+
+ ```
+ docker exec openclaw openclaw dashboard
+ ```
+
+​      
+
+ 输出一个完整的 URL	
 
 
 
